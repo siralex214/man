@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteRule ^classroom/?$ classroom.php [NC,L]
+RewriteRule ^[^/]+/(\d+)$ classroom.php?id=$1
+RewriteRule ^add/?$ add.php [NC,L]
+RewriteRule ^update/?$ update.php [NC,L]
+RewriteRule ^[^/]+/(\d+)$ update.php?id=$1
